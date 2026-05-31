@@ -13,7 +13,7 @@ layout: default
 		  {% assign all_docs = all_docs | concat: collection.docs %}
 		{% endfor %}
 
-		{% assign sorted_docs = all_docs | sort: "date" | reverse %}
+		{% assign sorted_docs = all_docs %}
 
 		{% for item in sorted_docs %}
 		  {% if item.lang == "en" and item.highlight %}
@@ -27,6 +27,19 @@ layout: default
 		      <td><a href="{{ item.url }}">{{ item.title }}</a></td>
 		    </tr>
 		  {% endif %}
+		{% endfor %}
+		{% for item in site.data.gallery %}
+			{% if item.highlight %}
+				<tr>
+			      <td>
+			      	<span class="date-full">{{ site.time | date: "%m/%d/%Y" }}</span>
+						<span class="date-short">{{ site.time | date: "%-m/%-d/%y" }}</span>
+			      </td>
+			      <td>gallery</td>
+			      <td style="white-space: nowrap;">––⊸</td>
+			      <td><a href="/gallery">{{ item.file }}</a></td>
+			    </tr>
+		    {% endif %}
 		{% endfor %}
 	</table>
 </div>

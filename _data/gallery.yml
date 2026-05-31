@@ -1,4 +1,10 @@
-- file: paint_ani.webp
+- file: u-2248.webp
+  year: "2026"
+  format: mixed media
+  thumb: center
+  highlight: true
+
+- file: paint-ani.webp
   year: "2025"
   format: gouache
   thumb: top
@@ -13,17 +19,17 @@
   format: gouache
   thumb: center
 
-- file: komune_01.webp
+- file: komune-01.webp
   year: "2025"
   format: pencil
   thumb: top
 
-- file: komune_02.webp
+- file: komune-02.webp
   year: "2025"
   format: copic
   thumb: right
 
-- file: komune_03.webp
+- file: komune-03.webp
   year: "2025"
   format: gouache
   thumb: center
@@ -33,12 +39,12 @@
   format: clip studio
   thumb: left
 
-- file: petals_01.webp
+- file: petals-01.webp
   year: "2025"
   format: gouache
   thumb: center
 
-- file: petals_02.webp
+- file: petals-02.webp
   year: "2025"
   format: gouache
   thumb: center
@@ -83,7 +89,7 @@
   format: copic
   thumb: left
 
-- file: mothgirl_02.webp
+- file: mothgirl-02.webp
   year: "2023"
   format: procreate
   thumb: center
