@@ -4,8 +4,8 @@
   <span class="illust">⏹</span>illust&nbsp; 
   <span class="other">⏹</span>other
 
-  {% assign sorted_projects = site.project | sort: "year" | reverse %}
-  {% assign years = sorted_projects | map: "year" | uniq %}
+  {% assign sorted_projects = site.project | sort: "date" | reverse %}
+  {% assign years = sorted_projects | map: "date" | uniq %}
 
   {% for year in years %}
     <p>
