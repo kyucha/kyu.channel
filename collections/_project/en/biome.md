@@ -2,7 +2,7 @@
 layout: project
 title: biome
 permalink: /project/biome
-year: 2023
+year: 2022
 lang: en
 type: web
 blurb: web project (2022-present) <a href="https://biome.zip" target="_blank"><button>visit site</button></a>
