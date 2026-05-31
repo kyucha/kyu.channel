@@ -2,7 +2,7 @@
 layout: project
 title: biome
 permalink: /jp/project/biome
-year: 2022
+date: 2022-10-12
 lang: jp
 type: web
 blurb: webプロジェクト (2022-present) <a href="https://biome.zip" target="_blank"><button>ホームページ</button></a>

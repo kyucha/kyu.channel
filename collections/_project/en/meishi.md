@@ -2,7 +2,7 @@
 layout: project
 title: LUST：10th anniversary
 permalink: /project/lust
-year: 2024
+date: 2024-02-02
 lang: en
 type: illust
 blurb: album & poster art for <a href="https://www.zoom-lens.org/lust10" target="_blank">meishi smile</a>

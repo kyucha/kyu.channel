@@ -2,7 +2,7 @@
 layout: project
 title: komuneポストカード
 permalink: /jp/project/komune-postcards
-year: 2025
+date: 2025-06-12
 lang: jp
 type: illust
 highlight: true

@@ -2,7 +2,7 @@
 layout: project
 title: LUST：十周年
 permalink: /jp/project/lust
-year: 2024
+date: 2024-02-02
 lang: jp
 type: illust
 blurb:  <a href="https://www.zoom-lens.org/lust10" target="_blank">meishi smile</a>さんのアルバム・ポスターイラスト

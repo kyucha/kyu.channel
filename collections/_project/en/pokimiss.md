@@ -2,7 +2,7 @@
 layout: project
 title: beyond the sea
 permalink: /project/beyond-the-sea
-year: 2023
+date: 2023-12-03
 lang: en
 type: illust
 blurb: art and interview featured in <a href="https://pokimissvillage.wixsite.com/beyond-the-sea2023" target="_blank">pokimiss village book</a>
