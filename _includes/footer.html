@@ -1,0 +1,9 @@
+<footer>
+  <div class="lang">
+    {% if page.url contains '/jp' %}
+      <a href="{{ page.url | remove_first: '/jp' }}">english</a><span>日本語</span>
+    {% else %}
+      <span>english</span><a href="{{ '/jp' | append: page.url }}">日本語</a>
+    {% endif %}
+  </div>
+</footer>

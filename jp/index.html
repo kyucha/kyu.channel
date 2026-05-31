@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="box">
+	<center>
+		<img src="/assets/images/radio.png" width="100%">
+		<p>受信中。。。</p>
+	</center>
+	<table>
+		{% for collection in site.collections %}
+		  {% assign jp_docs = collection.docs | where: "lang", "jp" %}
+		  	{% for item in jp_docs %}
+		  		{% if item.highlight %}
+				    <tr>
+				      <td>
+				        <span class="date-full">{{ item.date | date: "%m/%d/%Y" }}</span>
+				        <span class="date-short">{{ item.date | date: "%-m/%-d/%y" }}</span>
+				      </td>
+				      <td>{{ item.collection }}</td>
+				      <td style="white-space: nowrap;">––⊸</td>
+				      <td><a href="{{ item.url }}">{{ item.title }}</a></td>
+				    </tr>
+		    	{% endif %}
+		  {% endfor %}
+		{% endfor %}
+	</table>
+</div>

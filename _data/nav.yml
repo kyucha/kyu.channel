@@ -1,0 +1,11 @@
+- name: profile
+  url: /profile
+
+- name: gallery
+  url: /gallery
+
+- name: project
+  url: /project
+
+- name: blog
+  url: /blog

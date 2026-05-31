@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>kyu channel ⊸ project ⊸ {{ page.title }}</title>
+		<link rel="stylesheet" href="/assets/css/style.css">
+		<link rel="icon" href="./favicon.ico" type="image/x-icon">
+	<style>
+      @media (max-width: 768px) {
+        .project-list {
+          display: none;
+        }
+      }
+    </style>
+	</head>
+	<body>
+		<div class="container">
+			{% include nav.html %}
+			<div class="container-split">
+				{% include project-list.html %}
+				<div class="project-view">
+					<div class="box">
+						<h2>{{ page.title }}</h2>
+						<i>{{ page.blurb }}</i>
+						<hr>
+						{{ content }}
+						<br><br>
+					</div>
+				</div>
+			</div>
+			{% include footer.html %}
+		</div>
+			{% if page.url contains '/jp' %}
+			<a href="/jp/project">
+				<div class="mobile-nav">
+					<- 戻る
+				</div>
+			</a>
+			{% else %}
+				<a href="/project">
+					<div class="mobile-nav">
+						<- back to list
+					</div>
+				</a>
+			{% endif %}
+	</body>
+</html>

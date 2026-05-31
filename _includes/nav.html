@@ -1,0 +1,21 @@
+<nav>
+  <span class="title">
+    <a href="{% if page.url contains '/jp' %}/jp/ {% else %}/ {% endif %}" class="title">きゅう⊷ちゃんねる</a>
+  </span>
+
+  {% for item in site.data.nav %}
+    {% assign item_url = item.url %}
+    {% if page.url contains '/jp' %}
+      {% assign item_url = '/jp' | append: item.url %}
+    {% endif %}
+
+    <a href="{{ item_url }}" 
+       {% if page.url == item_url or page.url contains item_url %}
+         class="current"
+       {% endif %}>{{ item.name }}</a>
+
+    {% unless forloop.last %}
+      | 
+    {% endunless %}
+  {% endfor %}
+</nav>

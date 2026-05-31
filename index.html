@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="box">
+	<center>
+		<img src="/assets/images/radio.png" width="100%">
+		<p>tuning in...</p>
+	</center>
+	<table>
+		{% assign all_docs = "" | split: "" %}
+
+		{% for collection in site.collections %}
+		  {% assign all_docs = all_docs | concat: collection.docs %}
+		{% endfor %}
+
+		{% assign sorted_docs = all_docs | sort: "date" | reverse %}
+
+		{% for item in sorted_docs %}
+		  {% if item.lang == "en" and item.highlight %}
+		    <tr>
+		      <td>
+		      	<span class="date-full">{{ item.date | date: "%m/%d/%Y" }}</span>
+					<span class="date-short">{{ item.date | date: "%-m/%-d/%y" }}</span>
+		      </td>
+		      <td>{{ item.collection }}</td>
+		      <td style="white-space: nowrap;">––⊸</td>
+		      <td><a href="{{ item.url }}">{{ item.title }}</a></td>
+		    </tr>
+		  {% endif %}
+		{% endfor %}
+	</table>
+</div>

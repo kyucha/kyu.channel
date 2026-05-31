@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>kyu channel ⊸ gallery</title>
+		<link rel="stylesheet" href="/assets/css/style.css">
+		<link rel="icon" href="./favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+		<div class="container">
+			<nav>
+  <span class="title">
+    <a href="/ " class="title">きゅう⊷ちゃんねる</a>
+  </span>
+
+  
+    
+    
+
+    <a href="/profile" 
+       >profile</a>
+
+    
+      | 
+    
+  
+    
+    
+
+    <a href="/gallery" 
+       
+         class="current"
+       >gallery</a>
+
+    
+      | 
+    
+  
+    
+    
+
+    <a href="/project" 
+       >project</a>
+
+    
+      | 
+    
+  
+    
+    
+
+    <a href="/blog" 
+       >blog</a>
+
+    
+  
+</nav>
+			<div class="container-split">
+	<div class="gallery-list">
+		
+			<img src="/assets/gallery/paint_ani.webp" loading="lazy" class="thumbnail" style="object-position: top">
+		
+			<img src="/assets/gallery/dinner.webp" loading="lazy" class="thumbnail" style="object-position: top">
+		
+			<img src="/assets/gallery/patreon-may.webp" loading="lazy" class="thumbnail" style="object-position: center">
+		
+			<img src="/assets/gallery/komune_01.webp" loading="lazy" class="thumbnail" style="object-position: top">
+		
+			<img src="/assets/gallery/komune_02.webp" loading="lazy" class="thumbnail" style="object-position: right">
+		
+			<img src="/assets/gallery/komune_03.webp" loading="lazy" class="thumbnail" style="object-position: center">
+		
+			<img src="/assets/gallery/haibane.webp" loading="lazy" class="thumbnail" style="object-position: left">
+		
+			<img src="/assets/gallery/petals_01.webp" loading="lazy" class="thumbnail" style="object-position: center">
+		
+			<img src="/assets/gallery/petals_02.webp" loading="lazy" class="thumbnail" style="object-position: center">
+		
+			<img src="/assets/gallery/dragon.webp" loading="lazy" class="thumbnail" style="object-position: left">
+		
+			<img src="/assets/gallery/moitie.webp" loading="lazy" class="thumbnail" style="object-position: left">
+		
+			<img src="/assets/gallery/gemworld.webp" loading="lazy" class="thumbnail" style="object-position: left">
+		
+			<img src="/assets/gallery/wormgirl.webp" loading="lazy" class="thumbnail" style="object-position: right">
+		
+			<img src="/assets/gallery/lust.webp" loading="lazy" class="thumbnail" style="object-position: center">
+		
+			<img src="/assets/gallery/sezu.webp" loading="lazy" class="thumbnail" style="object-position: center">
+		
+			<img src="/assets/gallery/doglake.webp" loading="lazy" class="thumbnail" style="object-position: center">
+		
+			<img src="/assets/gallery/shrimpness.webp" loading="lazy" class="thumbnail" style="object-position: left">
+		
+			<img src="/assets/gallery/mothgirl_02.webp" loading="lazy" class="thumbnail" style="object-position: center">
+		
+			<img src="/assets/gallery/blinkgirl.webp" loading="lazy" class="thumbnail" style="object-position: center">
+		
+			<img src="/assets/gallery/sweetwater.webp" loading="lazy" class="thumbnail" style="object-position: center">
+		
+			<img src="/assets/gallery/mirror.webp" loading="lazy" class="thumbnail" style="object-position: center">
+		
+			<img src="/assets/gallery/lobster.webp" loading="lazy" class="thumbnail" style="object-position: center">
+		
+	</div>
+	<img id="clicked" alt="click to expand 🔍">
+</div>
+
+<script>
+	const thumbnails = document.querySelectorAll('.thumbnail');
+	const fullImage = document.getElementById('clicked');
+
+	thumbnails.forEach(thumb => {
+		thumb.addEventListener('click', () => {
+			fullImage.src = thumb.src;
+		});
+	});
+</script>
+			<footer>
+  <div class="lang">
+    
+      <span>english</span><a href="/jp/gallery.html">日本語</a>
+    
+  </div>
+</footer>
+		</div>
+	</body>
+</html>

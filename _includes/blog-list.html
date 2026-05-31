@@ -1,0 +1,14 @@
+<div class="blog-list">
+	{% for entry in site.blog reversed %}
+		{% if page.url contains 'jp' %}
+		  {% if entry.lang == 'jp' %}
+		    {% if page.url == entry.url %}⊸{% endif %}<a href="{{ entry.permalink }}" >{{ entry.date | date: "%m-%d-%Y" }} : {{ entry.title }}</a><br>
+		  {% endif %}
+		
+		{% else %}
+		  {% if entry.lang == 'en' %}
+		    {% if page.url == entry.url %}⊸{% endif %}<a href="{{ entry.permalink }}" >{{ entry.date | date: "%m-%d-%Y" }} : {{ entry.title }}</a><br>
+		  {% endif %}
+		{% endif %}
+	{% endfor %}
+</div>

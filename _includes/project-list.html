@@ -1,0 +1,34 @@
+<div class="project-list">
+  <span class="game">⏹</span>game&nbsp; 
+  <span class="web">⏹</span>web&nbsp; 
+  <span class="illust">⏹</span>illust&nbsp; 
+  <span class="other">⏹</span>other
+
+  {% assign sorted_projects = site.project | sort: "year" | reverse %}
+  {% assign years = sorted_projects | map: "year" | uniq %}
+
+  {% for year in years %}
+    <p>
+      {{ year }}<br>
+      
+      {% for project in sorted_projects %}
+        {% if project.year == year %}
+        
+          {% if page.url contains 'jp' %}
+            {% if project.lang == 'jp' %}
+              <span class="{{ project.type }}">⏹</span> 
+              <a href="{{ project.url }}" {% if page.url == project.url %}class="current"{% endif %}>{{ project.title }}</a><br>
+            {% endif %}
+          
+          {% else %}
+            {% if project.lang == 'en' %}
+              <span class="{{ project.type }}">⏹</span> 
+              <a href="{{ project.url }}" {% if page.url == project.url %}class="current"{% endif %}>{{ project.title }}</a><br>
+            {% endif %}
+          {% endif %}
+          
+        {% endif %}
+      {% endfor %}
+    </p>
+  {% endfor %}
+</div>

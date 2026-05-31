@@ -1,0 +1,23 @@
+---
+layout: default
+title: ⊸ gallery
+---
+<div class="container-split">
+	<div class="gallery-list">
+		{% for item in site.data.gallery %}
+			<img src="/assets/gallery/{{ item.file }}" loading="lazy" class="thumbnail" style="object-position: {{ item.thumb }}">
+		{% endfor %}
+	</div>
+	<img id="clicked" alt="クリックで拡大 🔍">
+</div>
+
+<script>
+	const thumbnails = document.querySelectorAll('.thumbnail');
+	const fullImage = document.getElementById('clicked');
+
+	thumbnails.forEach(thumb => {
+		thumb.addEventListener('click', () => {
+			fullImage.src = thumb.src;
+		});
+	});
+</script>
