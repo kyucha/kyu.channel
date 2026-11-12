@@ -1,8 +1,33 @@
+- file: orca.avif
+  year: "2026"
+  format: goauche
+  thumb: center
+  highlight: true
+
+- file: heron.avif
+  year: "2026"
+  format: pencil
+  thumb: center
+
+- file: bike.avif
+  year: "2026"
+  format: pencil
+  thumb: center
+
+- file: knicks.avif
+  year: "2026"
+  format: gouache
+  thumb: center
+
 - file: u-2248.webp
   year: "2026"
   format: mixed media
   thumb: center
-  highlight: true
+
+- file: hold.avif
+  year: "2026"
+  format: gouache
+  thumb: center
 
 - file: paint-ani.webp
   year: "2025"
@@ -33,11 +58,6 @@
   year: "2025"
   format: gouache
   thumb: center
-
-- file: haibane.webp
-  year: "2025"
-  format: clip studio
-  thumb: left
 
 - file: petals-01.webp
   year: "2025"

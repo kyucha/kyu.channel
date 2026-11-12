@@ -5,20 +5,16 @@ permalink: /jp/project/biome
 date: 2022-10-12
 lang: jp
 type: web
-blurb: webプロジェクト (2022-present) <a href="https://biome.zip" target="_blank"><button>ホームページ</button></a>
+blurb: webプロジェクト (2022-present)
 ---
-<center><p>ライブデモ 🧭</p></center>
-<p>
-	<div style=" --scale-factor: 0.7; overflow: hidden; width: 100%; height: 400px;">
-		<iframe src="https://biome.zip/worldmap" style="
-			transform: scale(var(--scale-factor)); 
-			width: calc(1/var(--scale-factor) * 100%); 
-			height: calc(1/var(--scale-factor) * 100%); 
-			transform-origin: 0 0;
-			border: 0">
-		</iframe>
-	</div>
-</p>
+
+<img src="/assets/project/biome/04.png" width="100%">
+
+<center><button><a href="https://biome.zip" target="_blank">ホームページ</a></button></center>
+
+<img src="/assets/project/biome/01.png" width="100%">
+<img src="/assets/project/biome/02.png" width="100%">
+<img src="/assets/project/biome/03.png" width="100%">
 
 <center><img src="https://biome.zip/assets/images/button.gif"></center>
 

@@ -1,33 +1,37 @@
 <div class="project-list">
-  <span class="game">⏹</span>game&nbsp; 
-  <span class="web">⏹</span>web&nbsp; 
-  <span class="illust">⏹</span>illust&nbsp; 
+  <span class="game">⏹</span>game&nbsp;
+  <span class="web">⏹</span>web&nbsp;
+  <span class="illust">⏹</span>illust&nbsp;
   <span class="other">⏹</span>other
 
-{% assign sorted_projects = site.project | sort: "date" | reverse %}
+  {% assign sorted_projects = site.project | sort: "date" | reverse %}
+  {% assign current_year = "" %}
 
-{% assign current_year = "" %}
+  {% for project in sorted_projects %}
+    {% assign project_year = project.date | date: "%Y" %}
 
-{% for project in sorted_projects %}
-
-  {% assign project_year = project.date | date: "%Y" %}
-
-  {% if project_year != current_year %}
-    {% assign current_year = project_year %}
-    <p>{{ current_year }}<br>
-  {% endif %}
-
-  {% if page.url contains 'jp' %}
-    {% if project.lang == 'jp' %}
-      <span class="{{ project.type }}">⏹</span>
-      <a href="{{ project.url }}" {% if page.url == project.url %}class="current"{% endif %}>{{ project.title }}</a><br>
+    {% if project_year != current_year %}
+      {% if current_year != "" %}
+        </p>
+      {% endif %}
+      {% assign current_year = project_year %}
+      <p>{{ current_year }}<br>
     {% endif %}
-  {% else %}
-    {% if project.lang == 'en' %}
-      <span class="{{ project.type }}">⏹</span>
-      <a href="{{ project.url }}" {% if page.url == project.url %}class="current"{% endif %}>{{ project.title }}</a><br>
-      </p>
+
+    {% if page.url contains 'jp' %}
+      {% if project.lang == 'jp' %}
+        <span class="{{ project.type }}">⏹</span>
+        <a href="{{ project.url }}" {% if page.url == project.url %}class="current"{% endif %}>{{ project.title }}</a><br>
+      {% endif %}
+    {% else %}
+      {% if project.lang == 'en' %}
+        <span class="{{ project.type }}">⏹</span>
+        <a href="{{ project.url }}" {% if page.url == project.url %}class="current"{% endif %}>{{ project.title }}</a><br>
+      {% endif %}
     {% endif %}
+  {% endfor %}
+
+  {% if current_year != "" %}
+    </p>
   {% endif %}
-{% endfor %}
 </div>

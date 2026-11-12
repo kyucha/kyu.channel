@@ -1,11 +1,10 @@
 ---
 layout: project
 title: komune postcards
-permalink: /project/komune-postcards
+permalink: /project/komune
 date: 2025-06-12
 lang: en
 type: illust
-highlight: true
 blurb: postcard designs for <a href="https://komune.space/" target="blank">komune</a>
 ---
 <img src="/assets/gallery/komune-01.webp" loading="lazy" width="50%"><img src="/assets/gallery/komune-01-alt.webp" width="50%">

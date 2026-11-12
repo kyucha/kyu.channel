@@ -1,14 +1,13 @@
 ---
 layout: project
-title: komuneポストカード
-permalink: /jp/project/komune-postcards
+title: komune ポストカード 
+permalink: /jp/project/komune
 date: 2025-06-12
 lang: jp
 type: illust
-highlight: true
-blurb: <a href="https://komune.space/" target="blank">komune</a>さんのはがきデザイン
+blurb: <a href="https://komune.space/" target="blank">komune</a>のはがきデザイン
 ---
-<img src="/assets/gallery/komune-01.webp" loading="lazy" width="50%"><img src="/assets/gallery/komune_01-alt.webp" width="50%">
+<img src="/assets/gallery/komune-01.webp" loading="lazy" width="50%"><img src="/assets/gallery/komune-01-alt.webp" width="50%">
 
 <img src="/assets/gallery/komune-02.webp" loading="lazy" width="100%">
 

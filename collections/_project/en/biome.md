@@ -5,25 +5,17 @@ permalink: /project/biome
 date: 2022-10-12
 lang: en
 type: web
-blurb: web project (2022-present) <a href="https://biome.zip" target="_blank"><button>visit site</button></a>
+blurb: web project (2022-present)
 ---
-<center><p>click to explore 🧭</p></center>
-<p>
-	<div style=" --scale-factor: 0.7; overflow: hidden; width: 100%; height: 400px;">
-		<iframe src="https://biome.zip/worldmap" style="
-			transform: scale(var(--scale-factor)); 
-			width: calc(1/var(--scale-factor) * 100%); 
-			height: calc(1/var(--scale-factor) * 100%); 
-			transform-origin: 0 0;
-			border: 0">
-		</iframe>
-	</div>
-</p>
 
-<p>biome is a site centered on roleplay, creation, and collaboration. its lore, locations, mechanics, and creatures are shaped by contributors.</p>
+<img src="/assets/project/biome/04.png" width="100%">
 
-<p>my goal with biome is to create an ecosystem of artists and open-source materials that work together to populate this world.</p>
+<p>biome is an open-source ecosystem built through exchange. its lore, locations, mechanics, and creatures are shaped by its contributors. users are encouraged to create and remix its resources, and feed them back into biome to populate its world.</p>
+
+<center><button><a href="https://biome.zip" target="_blank">visit site</a></button></center>
+
+<img src="/assets/project/biome/01.png" width="100%">
+<img src="/assets/project/biome/02.png" width="100%">
+<img src="/assets/project/biome/03.png" width="100%">
 
 <center><img src="https://biome.zip/assets/images/button.gif"></center>
-
-

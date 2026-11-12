@@ -19,11 +19,12 @@ h2 {
 }
 
 a {
-	color: blue;
+	color: darkgray;
 }
 
 a:hover {
 	background: whitesmoke;
+	color: silver;
 }
 
 hr {
@@ -33,11 +34,29 @@ hr {
 
 button {
 	font-family: uni;
+	font-size: 14px;
 	cursor: pointer;
+	background: whitesmoke;
+	border: 1px whitesmoke outset;
+	border-radius: 5px;
+}
+
+button a {
+	color: dimgray;
+	text-decoration: none;
+}
+
+button a:hover{
+	color: dimgray;
+	background: none;
+}
+
+button:hover {
+	border: 1px whitesmoke inset;
+	transform: translateY(1px);
 }
 
 nav {
-	background: white;
 	padding: 2.5px;
 }
 
@@ -49,8 +68,7 @@ footer {
 }
 
 footer a {
-	border: solid 0.5px blue;
-	background: white;
+	border: solid 0.5px black;
 	text-decoration: none;
 	padding: 2.5px;
 }
@@ -82,7 +100,6 @@ footer span {
 .box {
 	align-self: center;
 	justify-self: center;
-	background: white;
 	width: 440px;
 	padding: 2.5px;
 }
@@ -96,11 +113,7 @@ footer span {
 .current {
 	color: black;
 	text-decoration: none;
-}
-
-.current:hover {
-	background: none;
-	cursor: default;
+	pointer-events: none;
 }
 
 .date-short { display: none; }
@@ -157,7 +170,7 @@ footer span {
 }
 
 .project-list a {
-	color: black;
+	color: dimgray;
 	text-decoration: none;
 }
 
